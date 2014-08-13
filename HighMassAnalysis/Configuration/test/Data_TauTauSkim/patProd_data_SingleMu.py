@@ -44,9 +44,7 @@ if data:
   process.load("Configuration.StandardSequences.MagneticField_cff")
   process.source = cms.Source("PoolSource", 
        fileNames = cms.untracked.vstring(
-#          '/store/relval/CMSSW_5_2_2/Jet/RECO/GR_R_52_V4_RelVal_jet2011B-v2/0252/96518387-A174-E111-95A6-001A928116E8.root'
-#        '/store/data/Run2012A/SingleMu/AOD/22Jan2013-v1/20000/002F5062-346F-E211-BF00-1CC1DE04DF20.root'
-'/store/data/Run2012D/SingleElectron/AOD/22Jan2013-v1/10000/000D8CF0-D999-E211-A1E0-002590593920.root'
+            '/store/data/Run2012D/SingleMu/AOD/22Jan2013-v1/10000/0015EC7D-EAA7-E211-A9B9-E0CB4E5536A7.root'
         )
   )
 else:
@@ -56,9 +54,8 @@ else:
   process.GlobalTag.globaltag = 'START53_V27::All'
   process.load("Configuration.StandardSequences.MagneticField_cff")
   process.source = cms.Source("PoolSource", 
-       fileNames = cms.untracked.vstring(
-#          '/store/relval/CMSSW_5_3_2-START53_V6/RelValZTT/GEN-SIM-RECO/v1/0000/4AF6A8D2-7EB9-E111-9F26-003048678F78.root'
-'/store/mc/Summer12_DR53X/WZJetsTo2Q2Nu_TuneZ2star_8TeV-madgraph-tauloa/AODSIM/PU_S10_START53_V7A-v1/0000/08878E54-90DD-E111-91F5-003048678B14.root'
+        fileNames = cms.untracked.vstring(
+            '/store/mc/Summer12_DR53X/WZJetsTo2Q2Nu_TuneZ2star_8TeV-madgraph-tauloa/AODSIM/PU_S10_START53_V7A-v1/0000/08878E54-90DD-E111-91F5-003048678B14.root'
         )
   )
 
